@@ -1,0 +1,44 @@
+01-@property
+
+
+
+https://stackoverflow.com/questions/17330160/how-does-the-property-decorator-work
+
+
+https://docs.python.org/2/library/functions.html#property
+
+
+
+It turns a function into a getter, no setter
+
+
+class Parrot(object):
+    def __init__(self):
+        self._voltage = 100000
+
+    @property
+    def voltage(self):
+        """Get the current voltage."""
+        return self._voltage
+
+
+
+
+if you need setter, you need to define yourself
+
+class C(object):
+    def __init__(self):
+        self._x = None
+
+    @property
+    def x(self):
+        """I'm the 'x' property."""
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        self._x = value
+
+    @x.deleter
+    def x(self):
+        del self._x
