@@ -10,4 +10,3 @@ through the EmbeddedDocumentField field type.
 
 """
 
-# http://docs.mongoengine.org/apireference.html#mongoengine.EmbeddedDocument

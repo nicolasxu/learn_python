@@ -5,7 +5,11 @@
 
 # check the tutorial here
 
+'''
+Normal flask has its view function, but for graphql url, it will have its own 
+view function. view function tell flask how to handle the request and response data.
 
+'''
 
 # flask_sqlalchemy/app.py
 from flask import Flask
