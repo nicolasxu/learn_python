@@ -1,0 +1,8 @@
+03-WSGI
+
+http://ivory.idyll.org/articles/wsgi-intro/what-is-wsgi.html
+
+Python Web Server Gateway Interface (WSGI)
+
+ They all support WSGI at this point, which means you basically need to worry about configuration and deployment of your app, and nothing else.
+
