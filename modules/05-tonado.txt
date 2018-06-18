@@ -1,0 +1,7 @@
+05-tornado.txt
+
+what is python tornado?
+Tornado is a Python web framework and asynchronous networking lib.
+- non-blocking network I/O, good for long polling, Websocket, long-lived connection to each user.
+
+www.tornadoweb.org
