@@ -12,12 +12,21 @@ you can use this behavior to make Singleton, or other customization
 '''
 
 class Singleton(object):
-    _instance = None  # Keep instance reference 
-    
+    _instance = None  # Keep instance reference
+    # why do this???? If do this, the if state follow is always false, right?
     def __new__(cls, *args, **kwargs):
         if not cls._instance:
-            cls._instance = object.__name__(cls, *args, **kwargs)
+            cls._instance = object.__new__(cls, *args, **kwargs)
+            print("creating")
         return cls._instance
+
+a = Singleton()
+b = Singleton()
+print(a is b)
+this code outputs:
+
+creating
+True
 
 # You can also impose limit on total number created instances
 
